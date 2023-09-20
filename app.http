@@ -1,0 +1,51 @@
+send Request
+POST http://localhost:3000/registers/
+content-type : application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+### 
+
+POST http://localhost:3000/login/
+content-type : application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+Send Request
+GET http://localhost:3000/user/tweets/feed/
+###
+
+GET http://localhost:3000/user/following/
+###
+
+GET http://localhost:3000//user/followers/
+###
+
+GET http://localhost:3000//tweets/3/
+###
+
+GET http://localhost:3000/tweets/5/likes/
+###
+
+GET http://localhost:3000//tweets/6/replies
+###
+
+GET http://localhost:3000/user/tweets/
+###
+
+POST http://localhost:3000//user/tweets/
+content-type:application/json 
+{
+     "tweet": "The Morning..."
+};
+###
+
+DELETE http://localhost:3000/tweets/5/
